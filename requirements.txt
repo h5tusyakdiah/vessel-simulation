@@ -1,5 +1,5 @@
 # requirements.txt
-streamlit==23.1.2
+streamlit==1.16.0
 sqldf
 pyodbc
 statistics
@@ -7,7 +7,7 @@ pandas
 numpy
 streamlit_option_menu
 python-time
-pip==22.3.1
+pip==23.1.2
 streamlit-authenticator
 stauth
 streamlit-authenticator==0.1.5
