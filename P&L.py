@@ -6,6 +6,16 @@ from dateutil.relativedelta import relativedelta
 from openpyxl import Workbook
 import datetime
 
+import tableauserverclient as TSC
+# Set up connection.
+tableau_auth = TSC.PersonalAccessTokenAuth(
+    st.secrets["tableau"]["token_name"],
+    st.secrets["tableau"]["personal_access_token"],
+    st.secrets["tableau"]["site_id"],
+)
+server = TSC.Server(st.secrets["tableau"]["server_url"], use_server_version=True)
+
+
 st.set_page_config(page_title="VAMOS", 
                    page_icon=":bar_chart:", 
                    layout="wide")
