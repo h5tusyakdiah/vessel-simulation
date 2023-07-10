@@ -13,4 +13,4 @@ stauth
 streamlit-authenticator==0.1.5
 openpyxl
 tableauserverclient==x.x.x
-tableauserverclient
+pip install --upgrade pip
